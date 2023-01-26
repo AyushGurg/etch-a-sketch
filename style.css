@@ -8,19 +8,20 @@ h1 {
 }
 
 #sketchpad {
-    display: flex;
+    display:flex;
     width:600px;
     height:600px;
     margin:auto;
     margin-top: 50px;
+    
 }
 
 div .pixel {
+    
+    border: blanchedalmond;
+    border: solid 1px rgb(0, 217, 255);
     flex-basis: 40px;
-    flex-shrink: 0;
-    flex-flow: wrap;
-    border-color:aqua ;
-    flex-grow: 1;
     background-color: whitesmoke;
     color:rgb(6, 72, 253);
+    
 }
