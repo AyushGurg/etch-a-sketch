@@ -6,7 +6,8 @@ let pixelWidth = 0;
 let gridsize = 1;
 makegrid();
 
-
+//random colorway
+let red, green,blue;
 
 //
 let gridsizeChange = document.getElementById('gridsize');
@@ -32,7 +33,10 @@ function makegrid() {
             pixel.style.height = pixelWidth;
             pixel.style.flexBasis = pixelWidth;
             pixel.addEventListener("mouseenter",() => {
-            pixel.style.backgroundColor = "white";
+                red = Math.floor(Math.random()*255);
+                green = Math.floor(Math.random()*255);
+                blue = Math.floor(Math.random()*255);
+                pixel.style.backgroundColor = "rgb(" + (red).toString(10) + ","+ (green).toString(10) + "," + (blue).toString(10) + ")";
             });
         }
     } 
